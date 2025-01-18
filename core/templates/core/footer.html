@@ -1,0 +1,40 @@
+{% load custom_filters %}
+<footer class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Şirket Bilgileri -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Dijihype</h3>
+                <p class="text-gray-300">
+                    Modern çözümler üreten<br>
+                    yazılım şirketi
+                </p>
+            </div>
+            
+            <!-- Hızlı Linkler -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Hızlı Linkler</h3>
+                <ul class="space-y-2">
+                    <li><a href="{% url 'core:about' %}" class="text-gray-300 hover:text-white">Hakkımızda</a></li>
+                    <li><a href="{% url 'core:services' %}" class="text-gray-300 hover:text-white">Hizmetler</a></li>
+                    <li><a href="{% url 'core:projects' %}" class="text-gray-300 hover:text-white">Projeler</a></li>
+                    <li><a href="{% url 'core:contact' %}" class="text-gray-300 hover:text-white">İletişim</a></li>
+                </ul>
+            </div>
+            
+            <!-- İletişim -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">İletişim</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>info@dijihype.com</li>
+                    <li>+90 555 555 5555</li>
+                    <li>İstanbul, Türkiye</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p class="text-gray-300">&copy; {% now "Y" %} Dijihype. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</footer>

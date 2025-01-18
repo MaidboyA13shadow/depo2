@@ -1,0 +1,31 @@
+{% load static %}
+{% load custom_filters %}
+{% load tailwind_tags %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dijihype{% endblock %}</title>
+    {% tailwind_css %}
+    <!-- AOS Animasyon Kütüphanesi -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="flex flex-col min-h-screen">
+    {% include 'core/navbar.html' %}
+    
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'core/footer.html' %}
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

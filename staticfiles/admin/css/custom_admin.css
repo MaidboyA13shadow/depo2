@@ -1,0 +1,89 @@
+/* static/admin/css/custom_admin.css */
+
+:root {
+    --primary: #4f46e5;
+    --secondary: #6366f1;
+    --accent: #818cf8;
+    --primary-fg: #fff;
+  }
+  
+  /* Header */
+  #header {
+      background: var(--primary);
+      color: var(--primary-fg);
+  }
+  
+  /* Logo */
+  #branding h1 {
+      color: var(--primary-fg);
+  }
+  
+  /* Buttons */
+  .button, input[type=submit], input[type=button], .submit-row input, a.button {
+      background: var(--primary);
+      color: var(--primary-fg);
+      border-radius: 4px;
+  }
+  
+  .button:hover, input[type=submit]:hover, input[type=button]:hover {
+      background: var(--secondary);
+  }
+  
+  /* Links */
+  a:link, a:visited {
+      color: var(--primary);
+  }
+  
+  /* Selected rows */
+  .row1:hover, .row2:hover {
+      background: #f8fafc;
+  }
+  
+  /* Form controls */
+  .module h2, .module caption, .inline-group h2 {
+      background: var(--primary);
+      color: var(--primary-fg);
+      border-radius: 4px 4px 0 0;
+  }
+  
+  .module {
+      border-radius: 4px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      border: none;
+  }
+  
+  /* List pages */
+  #changelist-filter h2 {
+      background: var(--primary);
+      border-radius: 4px 4px 0 0;
+  }
+  
+  #changelist-filter li.selected a {
+      color: var(--primary);
+  }
+  
+  /* Dashboard */
+  .dashboard .module table th {
+      background: var(--primary);
+      color: var(--primary-fg);
+  }
+  
+  /* Form inputs */
+  input[type=text], input[type=password], input[type=email], input[type=url], input[type=number], input[type=tel], textarea, select, .vTextField {
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      padding: 8px 12px;
+  }
+  
+  /* Messages */
+  .success {
+      background: #10b981;
+  }
+  
+  .warning {
+      background: #f59e0b;
+  }
+  
+  .error {
+      background: #ef4444;
+  }
