@@ -1,0 +1,2 @@
+# depo2
+kurumsal
